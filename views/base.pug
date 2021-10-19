@@ -1,0 +1,21 @@
+//- layout.pug
+doctype html 
+html
+  head
+    title Aditya Dance Academy
+    block scripts
+    block style
+  body
+    nav#navbar 
+      ul 
+        div#logo
+            img(src="/static/dancelogo3.png")
+            |ADA 
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/contact") Contact]
+        li #[a(href="/") Class Info]
+        li #[a(href="/") Services]
+    block content
+    section#footersection
+          |Copyright 2021 &copy; adityadanceacademy.in  |All rights reserved

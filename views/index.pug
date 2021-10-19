@@ -1,0 +1,60 @@
+//- index.pug
+doctype html
+html 
+  title Aditya Dance Academy
+  style 
+    include ../static/style.css
+  body
+    nav#navbar 
+      ul 
+        div#logo
+            img(src="/static/dancelogo3.png")
+            |ADA 
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Contact]
+        li #[a(href="/") Class Info]
+        li #[a(href="/") Services]
+      
+      section#introsection
+          div Welcome To Aditya Dance Academy 
+          div#InSmallCase Eat Sleep Dance Repeat
+      section#missionsection
+          | Our Mission
+          div#MissionCard 
+              div.card 
+                h3 Dance Perfection
+                div.Cardbox
+                      div.CardImg 
+                        img(src="../static/dance1.png")
+                      div.CardContent 
+                        | This is the best Dance academy in the world.
+              div.card 
+                h3 Dance The way you like
+                div.Cardbox
+                      div.CardImg 
+                        img(src="../static/dance2.png")
+                      div.CardContent 
+                        | This is the best Dance academy in the world.
+                     
+              div.card 
+                h3 Any Body Can Dance 
+                div.Cardbox
+                      div.CardImg 
+                        img(src="../static/dance4.png")
+                      div.CardContent 
+                        | This is the best Dance academy in the world.
+                     
+             
+          
+      section#sponsersection
+          | Our Sponser
+          div#sponserImages
+            img(src="/static/microsoft.png", alt="Sponser Images")
+            img(src="/static/apple.png", alt="Sponser Images")
+            img(src="/static/skype.png", alt="Sponser Images")
+            img(src="/static/hp.png", alt="Sponser Images")
+      section#footersection
+          |Copyright 2021 &copy; adityadanceacademy.in  |All rights reserved
+      script 
+         include ../static/index.js
